@@ -1,0 +1,71 @@
+@use "sass:map";
+
+// Layout
+@use "vertical-nav";
+@use "default-layout";
+
+// Components
+@use "components";
+
+// Utilities
+@use "utilities";
+
+// Misc
+@use "misc";
+
+// Dark
+@use "dark";
+$green-color : #56CA00;
+$grey-color : #grey;
+$primary : #9155fd;
+a {
+  color: rgb(var(--v-theme-primary));
+  text-decoration: none;
+}
+
+// Vuetify 3 don't provide margin bottom style like vuetify 2
+p {
+  margin-block-end: 1rem;
+}
+
+// Iconify icon size
+svg.iconify {
+  block-size: 1em;
+  inline-size: 1em;
+}
+
+
+.badge-success{
+  background-color:$green-color;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.color-red{
+  color:$grey-color;
+  transform: skew(-35.5deg);
+  margin-right: 10px;
+
+}
+.chips{
+  font-size:10px !important;
+  margin-right:10px;
+}
+
+#sheet_header_compare_data_source{
+  .item-list{
+  }
+  .v-list-item{
+    margin-top:0;
+    margin-bottom:0;
+  }
+  .v-list-item-title{
+    font-size:12px
+  }
+  .input-text{
+    border:1px #d0d0d0  solid
+  }
+  .isNew{
+    background-color: $primary;
+    color:white;
+  }
+}
